@@ -5,8 +5,8 @@
 const char* ssid = "Techno povo 5 pro 5g";
 const char* password = "iccd7065";
 
-// 2. Server Endpoint (Confirmed with 'ipconfig': 10.197.167.249)
-const char* serverName = "http://10.197.167.249:8000/sensor-data";
+// 2. Server Endpoint (Confirmed with 'ipconfig': 172.23.172.249)
+const char* serverName = "http://172.23.172.249:8000/sensor-data";
 
 // 3. Pin Definitions for HC-SR04
 #define TRIG_PIN 13

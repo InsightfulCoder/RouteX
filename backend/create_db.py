@@ -4,7 +4,7 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 def create_db():
     try:
         # Try to connect to 'postgres' database to create the new one
-        con = psycopg2.connect(user='postgres', password='admin123', host='localhost', port='5432', database='postgres')
+        con = psycopg2.connect(user='postgres', password='Pass@123', host='localhost', port='5432', database='postgres')
         con.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         cur = con.cursor()
         cur.execute("CREATE DATABASE waste_db1")

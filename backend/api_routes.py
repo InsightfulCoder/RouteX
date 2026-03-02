@@ -40,7 +40,7 @@ AMRAVATI_BIN_COORDS = {
 
 def register_routes(app, db):
     with app.app_context():
-        db.create_all()
+        # db.create_all()
         # Seed initial trucks if none exist
         if Truck.query.count() == 0:
             trucks = [
