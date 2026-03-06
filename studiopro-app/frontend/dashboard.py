@@ -33,10 +33,8 @@ def dashboard_page():
         st.write("Milestone 3 feature coming soon!")
         
     elif app_mode == "Profile Settings":
-        st.subheader("⚙️ Profile Settings")
-        st.write(f"**Username:** {user['username']}")
-        st.write(f"**Email:** {user['email']}")
-        st.write(f"**Member Since:** {user['created_at']}")
+        from frontend.profile import profile_page
+        profile_page()
 
 if __name__ == "__main__":
     dashboard_page()
